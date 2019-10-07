@@ -30,6 +30,7 @@ clf.fit(x_train,y_train)
 
 #predict y
 y_pred=clf.predict(x_test)
+y_pred1=clf.predict_proba(x_test)[:,1]
 
 #make confusion matrix
 from sklearn.metrics import confusion_matrix
